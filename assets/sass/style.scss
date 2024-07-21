@@ -1,5 +1,57 @@
 body{
-    .header{
-        color: black;
+    margin: 0px;
+    padding: 0px;
+}
+.logo{
+    .logo__img{
+        width: 55px;
+        height: 55px;
+        border-radius: 10px;
     }
+    .logo__text{
+        font-weight: 700;
+        font-size: 24px;
+    }
+}
+.card{
+
+    .card__img{
+        border-radius: 20px;
+        width: 298px;
+        height: 200px;
+    }
+    .card__date{
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .card__tittle{
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .card__logo{
+
+        img{
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+        }
+    }
+}
+.category{
+    width: 297px;
+    height: 89px;
+    border-radius: 10px;
+    .category__img{
+        height: 75px;
+        padding: 7px;
+    }
+    .category__text{
+        font-weight: 700;
+        font-size: 32px;
+        display: inline;
+        padding: 10px 5px;
+    }
+}
+#categoryHTML{
+    background-color: #E93E30;
 }
