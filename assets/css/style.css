@@ -1,53 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body {
-  margin: 0px;
-  padding: 0px;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
+.main-content {
+  padding: 20px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+.section__title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #171717;
+}
+.section--novedades .novedades__content, .section--novedades .populares__content, .section--populares .novedades__content, .section--populares .populares__content {
+  display: flex;
+  gap: 20px;
+}
+.section--novedades .novedades__main, .section--populares .novedades__main {
+  flex: 2;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+}
+.section--novedades .novedades__main .card__img, .section--populares .novedades__main .card__img {
+  width: 603px;
+  height: 314px;
+  border-radius: 20px;
+}
+.section--novedades .novedades__main .card__date, .section--populares .novedades__main .card__date {
+  font-size: 18px;
+  font-weight: 400;
+}
+.section--novedades .novedades__main .card__tittle, .section--populares .novedades__main .card__tittle {
+  font-size: 24px;
+  font-weight: 700;
+}
+.section--novedades .novedades__main .card__logo img, .section--populares .novedades__main .card__logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.section--novedades .novedades__main .card__logo span, .section--populares .novedades__main .card__logo span {
+  font-size: 24px;
+  font-weight: 500;
+}
+.section--novedades .novedades__sidebar, .section--populares .novedades__sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 60px;
+  gap: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.section--novedades .novedades__sidebar .card, .section--populares .novedades__sidebar .card {
+  display: flex;
+}
+.section--novedades .novedades__sidebar .card__img, .section--populares .novedades__sidebar .card__img {
+  width: 190px;
+  height: 145px;
+}
+.section--novedades .populares__main, .section--populares .populares__main {
+  flex: 2;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+}
+.section--novedades .categorias__sidebar, .section--populares .categorias__sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 60px;
+  gap: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  display: inline-block;
+}
+.card .card__img {
+  border-radius: 20px;
+  width: 298px;
+  height: 200px;
+}
+.card div {
+  padding-left: 21px;
+}
+.card div .card__date {
+  margin: 5px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.card div .card__tittle {
+  margin: 5px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.card div .card__logo {
+  display: flex;
+  align-items: center;
+}
+.card div .card__logo img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.card div .card__logo span {
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
 .logo .logo__img {
   width: 55px;
   height: 55px;
   border-radius: 10px;
 }
 .logo .logo__text {
+  margin-left: 20px;
   font-weight: 700;
   font-size: 24px;
-}
-
-.card .card__img {
-  border-radius: 20px;
-  width: 298px;
-  height: 200px;
-}
-.card .card__date {
-  font-weight: 400;
-  font-size: 16px;
-}
-.card .card__tittle {
-  font-weight: 700;
-  font-size: 20px;
-}
-.card .card__logo img {
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-}
-
-.category {
-  width: 297px;
-  height: 89px;
-  border-radius: 10px;
-}
-.category .category__img {
-  height: 75px;
-  padding: 7px;
-}
-.category .category__text {
-  font-weight: 700;
-  font-size: 32px;
-  display: inline;
-  padding: 10px 5px;
-}
-
-#categoryHTML {
-  background-color: #E93E30;
 }/*# sourceMappingURL=style.css.map */
