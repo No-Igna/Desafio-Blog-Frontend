@@ -14,82 +14,141 @@
             <span class="logo__text">Blog FrontEnd</span>
         </div>
     </header>
-    <!--Main-->
-    <main class="main-content">
-        <!--novedades section-->
-        <section class="section section--novedades">
-            <h2 class="section__title">Novedades</h2>
-            <div class="novedades__content">
-                <div class="novedades__main">
-                    <div class="card">
-                        <img src="./assets/img/posts/bootstrap.png" alt="post bootstrap" class="card__img">
-                        <div>
-                            <p class="card__date">24 Noviembre, 2022</p>
-                            <h3 class="card__tittle">Modifica el tema de Bootstrap con variables CSS</h3>
-                            <div class="card__logo">
-                                <img src="./assets/img/logos/adl.png" alt="logo Desafio Latam">
-                                <span>Desafío Latam</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="novedades__sidebar">
-                    <div class="card">
-                        <img src="./assets/img/posts/Herencia-JS.png" alt="post herencia js" class="card__img">
-                        <div>
-                            <p class="card__date">24 Noviembre, 2022</p>
-                            <h3 class="card__tittle">Modifica el tema de Bootstrap con variables CSS</h3>
-                            <div class="card__logo">
-                                <img src="./assets/img/logos/adl.png" alt="logo Desafio Latam">
-                                <span>Desafío Latam</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="./assets/img/posts/Etiquetas-semánticas-HTML.png" alt="post etiquetas semanticas html" class="card__img">
-                        <div>
-                            <p class="card__date">24 Noviembre, 2022</p>
-                            <h3 class="card__tittle">Modifica el tema de Bootstrap con variables CSS</h3>
-                            <div class="card__logo">
-                                <img src="./assets/img/logos/adl.png" alt="logo Desafio Latam">
-                                <span>Desafío Latam</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="./assets/img/posts/reactComponents.png" alt="post react components" class="card__img">
-                        <div>
-                            <p class="card__date">24 Noviembre, 2022</p>
-                            <h3 class="card__tittle">Modifica el tema de Bootstrap con variables CSS</h3>
-                            <div class="card__logo">
-                                <img src="./assets/img/logos/adl.png" alt="logo Desafio Latam">
-                                <span>Desafío Latam</span>
-                            </div>
+    <!--novedades-->
+    <section style="border-bottom: 1px solid #ccc;">
+        <section class="main">
+            <h2 class="main__title">Novedades</h2>
+            <div class="main__novedades">
+                <div class="card">
+                    <img src="./assets/img/posts/bootstrap.png" alt="post bootstrap" class="card__img">
+                    <div>
+                        <p class="card__date">24 Noviembre, 2022</p>
+                        <h3 class="card__tittle">Modifica el tema de Bootstrap con variables CSS</h3>
+                        <div class="card__logo">
+                            <img src="./assets/img/logos/adl.png" alt="logo Desafio Latam">
+                            <span>Desafío Latam</span>
                         </div>
                     </div>
                 </div>
             </div>
-            
-        </section>    
-        <section class="section section--populares">
-            <div class="populares__content">
-                <!--populares section-->
-                <div class="populares__main">
-
-                </div>
-                <!--categorias sidebar-->
-                <div class="categorias__sidebar">
-                    <div class="widget">
-                        <img src="./assets/img/logos/html.png" class="widget__img" alt="" />
-                        <h3 class="widget__text">HTML</h3>
-                      </div>
-                </div>
-            </div>
-
         </section>
-    </main>
-    <!--footer-->
-    <footer>
+        <aside class="aside">
+            <div class="aside__novedades">
+                <div class="card">
+                    <img src="./assets/img/posts/Herencia-JS.png" alt="post herencia js" class="card__img">
+                    <div>
+                        <p class="card__date">24 Noviembre, 2022</p>
+                        <h3 class="card__tittle">Herencia en JavaScript</h3>
+                        <div class="card__logo">
+                            <img src="./assets/img/logos/adl.png" alt="logo Desafio Latam">
+                            <span>Desafío Latam</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/posts/Etiquetas-semánticas-HTML.png" alt="post etiquetas semanticas html" class="card__img">
+                    <div>
+                        <p class="card__date">24 Noviembre, 2022</p>
+                        <h3 class="card__tittle">Etiquetas semánticas</h3>
+                        <div class="card__logo">
+                            <img src="./assets/img/logos/adl.png" alt="logo Desafio Latam">
+                            <span>Desafío Latam</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/posts/reactComponents.png" alt="post react components" class="card__img">
+                    <div>
+                        <p class="card__date">24 Noviembre, 2022</p>
+                        <h3 class="card__tittle">Componentes React</h3>
+                        <div class="card__logo">
+                            <img src="./assets/img/logos/adl.png" alt="logo Desafio Latam">
+                            <span>Desafío Latam</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </section>
+    <!--populares y categorias-->
+    <section>
+        <section class="main">
+            <h2 class="main__title">Populares</h2>
+            <div class="main__populares">
+                <div class="card">
+                    <img src="./assets/img/posts/vue-components.png" alt="post vue-components" class="card__img">
+                    <div>
+                        <p class="card__date">24 Noviembre, 2022</p>
+                        <h3 class="card__tittle">Componentes Vue</h3>
+                        <div class="card__logo">
+                            <img src="./assets/img/logos/adl.png" alt="logo Desafio Latam">
+                            <span>Desafío Latam</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/posts/api-js.png" alt="post api-js" class="card__img">
+                    <div>
+                        <p class="card__date">24 Noviembre, 2022</p>
+                        <h3 class="card__tittle">Consumo de API con JavaScript</h3>
+                        <div class="card__logo">
+                            <img src="./assets/img/logos/adl.png" alt="logo Desafio Latam">
+                            <span>Desafío Latam</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/posts/sass.jpg" alt="post sass" class="card__img">
+                <div>
+                    <p class="card__date">24 Noviembre, 2022</p>
+                    <h3 class="card__tittle">CSS reutilizable con Sass</h3>
+                    <div class="card__logo">
+                        <img src="./assets/img/logos/adl.png" alt="logo Desafio Latam">
+                        <span>Desafío Latam</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/posts/bootstrap.png" alt="post bootstrap" class="card__img">
+                <div>
+                    <p class="card__date">24 Noviembre, 2022</p>
+                    <h3 class="card__tittle">Componentes Bootstrap</h3>
+                    <div class="card__logo">
+                        <img src="./assets/img/logos/adl.png" alt="logo Desafio Latam">
+                        <span>Desafío Latam</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <aside class="aside">
+            <div class="widget" id="html">
+                <img src="./assets/img/logos/html.png" alt="logo html" class="widget__img">
+                <h3 class="widget__title">HTML</h3>
+            </div>
+            <div class="widget" id="js">
+                <img src="./assets/img/logos/js.png" alt="logo js" class="widget__img">
+                <h3 class="widget__title">JavaScript</h3>
+            </div>
+            <div class="widget" id="css">
+                <img src="./assets/img/logos/css.png" alt="logo css" class="widget__img">
+                <h3 class="widget__title">CSS</h3>
+            </div>
+            <div class="widget" id="react">
+                <img src="./assets/img/logos/react.png" alt="logo react" class="widget__img">
+                <h3 class="widget__title">React</h3>
+            </div>
+            <div class="widget" id="vue">
+                <img src="./assets/img/logos/vue.png" alt="logo vue" class="widget__img">
+                <h3 class="widget__title">Vue</h3>
+            </div>
+            <div class="widget" id="bootstrap">
+                <img src="./assets/img/logos/bootstrap-logo.png" alt="logo bootstrap" class="widget__img">
+                <h3 class="widget__title">Bootstrap</h3>
+            </div>
+        </aside>
+    </section>
+    <footer class="footer">
         <div class="logo">
             <img src="./assets/img/logos/adl.png" alt="logo Desafio Latam" class="logo__img">
             <span class="logo__text">Blog FrontEnd</span>

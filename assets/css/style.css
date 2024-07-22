@@ -1,100 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-body {
-  font-family: "Poppins", sans-serif;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-.main-content {
-  padding: 20px;
+body {
+  max-width: 1280px;
+  margin: 10px auto;
 }
 
-.section {
-  margin-bottom: 40px;
-}
-.section__title {
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: #171717;
-}
-.section--novedades .novedades__content, .section--novedades .populares__content, .section--populares .novedades__content, .section--populares .populares__content {
-  display: flex;
-  gap: 20px;
-}
-.section--novedades .novedades__main, .section--populares .novedades__main {
-  flex: 2;
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: center;
-}
-.section--novedades .novedades__main .card__img, .section--populares .novedades__main .card__img {
-  width: 603px;
-  height: 314px;
-  border-radius: 20px;
-}
-.section--novedades .novedades__main .card__date, .section--populares .novedades__main .card__date {
-  font-size: 18px;
-  font-weight: 400;
-}
-.section--novedades .novedades__main .card__tittle, .section--populares .novedades__main .card__tittle {
-  font-size: 24px;
-  font-weight: 700;
-}
-.section--novedades .novedades__main .card__logo img, .section--populares .novedades__main .card__logo img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-}
-.section--novedades .novedades__main .card__logo span, .section--populares .novedades__main .card__logo span {
-  font-size: 24px;
-  font-weight: 500;
-}
-.section--novedades .novedades__sidebar, .section--populares .novedades__sidebar {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  margin-right: 60px;
-  gap: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.section--novedades .novedades__sidebar .card, .section--populares .novedades__sidebar .card {
-  display: flex;
-}
-.section--novedades .novedades__sidebar .card__img, .section--populares .novedades__sidebar .card__img {
-  width: 190px;
-  height: 145px;
-}
-.section--novedades .populares__main, .section--populares .populares__main {
-  flex: 2;
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: center;
-}
-.section--novedades .categorias__sidebar, .section--populares .categorias__sidebar {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  margin-right: 60px;
-  gap: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.header {
+  position: relative;
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
 }
 
 .card {
   display: inline-block;
+  max-width: 300px;
 }
 .card .card__img {
   border-radius: 20px;
   width: 298px;
   height: 200px;
-}
-.card div {
-  padding-left: 21px;
 }
 .card div .card__date {
   margin: 5px;
@@ -134,4 +65,114 @@ body {
   margin-left: 20px;
   font-weight: 700;
   font-size: 24px;
+}
+
+.widget {
+  margin: 10px auto;
+  width: 300px;
+  height: 89px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.widget__img {
+  height: 100%;
+  position: relative;
+  float: left;
+}
+.widget__title {
+  font-size: 32px;
+  position: relative;
+  float: right;
+  margin-right: 30px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.main {
+  position: relative;
+  width: 750px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.main__title {
+  font-size: 28px;
+  margin: 0px 0px 20px 5%;
+  color: #171717;
+}
+.main__novedades .card {
+  max-width: 605px;
+}
+.main__novedades .card__img {
+  width: 603px;
+  height: 314px;
+  border-radius: 20px;
+}
+.main__novedades .card__date {
+  font-size: 18px;
+  font-weight: 400;
+}
+.main__novedades .card__tittle {
+  font-size: 24px;
+  font-weight: 700;
+}
+.main__novedades .card__logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.main__novedades .card__logo span {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.aside {
+  position: relative;
+  float: right;
+  margin: 20px auto;
+  width: 450px;
+}
+.aside__novedades .card {
+  max-width: 430px;
+  display: flex;
+}
+.aside__novedades .card__img {
+  width: 190px;
+  height: 145px;
+}
+.aside__novedades .card div {
+  padding-left: 21px;
+}
+
+.footer {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin: 20px 0;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+#html {
+  background-color: #E93E30;
+}
+
+#js {
+  background-color: #F7E018;
+}
+
+#css {
+  background-color: #299ED5;
+}
+
+#react {
+  background-color: #292C33;
+}
+
+#vue {
+  background-color: #67C770;
+}
+
+#bootstrap {
+  background-color: #563D7C;
 }/*# sourceMappingURL=style.css.map */
