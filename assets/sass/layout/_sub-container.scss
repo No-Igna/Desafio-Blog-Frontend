@@ -1,0 +1,25 @@
+.sub-container{
+    background-color:$greenBFE;
+    display: flex;
+    height: 10rem;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    .main__title{
+        color: $white;
+        margin: 0px 1rem 10px 1rem;
+
+    }
+    .main__input{
+        margin: 0px 0px 10px 1rem;
+        width: 42rem;
+        height: 2rem;
+        border: 1px solid #5D6163;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    .main__button{
+        background-color: lightgray;
+        color: $black;
+    }
+}
