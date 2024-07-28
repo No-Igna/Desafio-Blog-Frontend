@@ -1,0 +1,38 @@
+.form {
+    margin-inline-start: 10%;
+    width: 80%;
+    height: 60%;
+    border-radius: 5px;
+    padding: 1px;
+    &__title{
+        text-align: center;
+    }
+    &__container{ 
+        display:flex;
+        flex-direction: column;
+        margin: 1rem 2rem;
+        align-items: center;
+    }
+    &__input-text{
+        width: 50%;
+        padding: 12px 20px;
+        margin: 10px;
+        display: inline-block;
+        border: 1px solid #5D6163;
+        border-radius: 4px;
+        box-sizing: border-box;    
+    }
+    .button{
+        width: 50%;
+        margin: 10px;
+        &--primary{
+            background-color: $greenBFE;
+            color: $white;
+        }
+        &--secondary{
+            background-color: $white;
+            color: $black;
+            border: 1px solid #5D6163;
+        }
+    }
+}
