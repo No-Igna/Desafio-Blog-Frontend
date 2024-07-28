@@ -1,0 +1,40 @@
+.main{
+    position: relative;
+    width: 750px;
+    margin-top: 20px;
+    display: inline-block;
+    &__title{
+        font-size: 28px;
+        margin: 0px 0px 20px 5%;
+        color: #171717;
+    }
+    &__novedades{
+        .card{
+            max-width: 605px;
+            &__img{
+                width: 603px;
+                height: 314px;
+                border-radius: 20px;
+            }
+            &__date{
+                font-size: 18px;
+                font-weight: 400;
+            }
+            &__tittle{
+                font-size: 24px;
+                font-weight: 700;
+            }
+            &__logo{
+                img{
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                }
+                span{
+                    font-size: 24px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
