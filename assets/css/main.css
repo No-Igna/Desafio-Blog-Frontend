@@ -219,6 +219,31 @@
   padding-left: 21px;
 }
 
+.sub-container {
+  background-color: #67C770;
+  display: flex;
+  height: 10rem;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.sub-container .main__title {
+  color: #fff;
+  margin: 0px 1rem 10px 1rem;
+}
+.sub-container .main__input {
+  margin: 0px 0px 10px 1rem;
+  width: 42rem;
+  height: 2rem;
+  border: 1px solid #5D6163;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.sub-container .main__button {
+  background-color: lightgray;
+  color: #000;
+}
+
 * {
   margin: 0;
   padding: 0;
